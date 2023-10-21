@@ -5,10 +5,10 @@ public class Flight {
     private final String month;
     private final int passengers;
 
-    public Flight(int year, String month, int passengers) {
-        this.year = year;
+    public Flight(String year, String month, String passengers) {
+        this.year = Integer.parseInt(year);
         this.month = month;
-        this.passengers = passengers;
+        this.passengers = Integer.parseInt(passengers);
     }
 
     public int getYear() {
